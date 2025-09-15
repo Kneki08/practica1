@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyudasRD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .header-section {
+            background: linear-gradient_ _to_ _right, #FFA500, #FFD700; /* Orange to Gold gradient */
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .header-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .download-button {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto; /* Center the button */
+            width: fit-content;
+        }
+
+        .download-button img {
+            margin-right: 10px;
+            height: 20px; /* Adjust as needed */
+            filter: invert(100%); /* Make the icon white */
+        }
+
+        .content-section {
+            padding: 50px 10%;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .about-us, .contact-form {
+            flex: 1;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .about-us h2, .contact-form h2 {
+            color: #FFA500;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .about-us p {
+            line-height: 1.6;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box; /* Ensures padding doesn't increase total width */
+            font-size: 1em;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            background-color: #FFA500;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .submit-button:hover {
+            background-color: #FF8C00;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #eee;
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+
+        /* Basic responsiveness */
+        @media (max-width: 768px) {
+            .content-section {
+                flex-direction: column;
+                padding: 30px 5%;
+                gap: 30px;
+            }
+
+            .header-section h1 {
+                font-size: 2.5em;
+            }
+
+            .header-section p {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-section">
+        <h1>AyudasRD</h1>
+        <p>Tu app para reportar problemas eléctricos en tiempo real</p>
+        <a href="#" class="download-button">
+            <img src="https://www.svgrepo.com/show/508432/download.svg" alt="Download Icon">
+            Descargar App
+        </a>
+    </div>
+
+    <div class="content-section">
+        <div class="about-us">
+            <h2>¿Qué es AyudasRD?</h2>
+            <p>AyudasRD es una plataforma que permite a los ciudadanos reportar fallas eléctricas, apagones y problemas de voltaje desde su teléfono. Gracias a la comunidad, los reportes se comparten y alertan a las autoridades para actuar más rápido.</p>
+        </div>
+
+        <div class="contact-form">
+            <h2>Contáctanos</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Tu nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Tu correo">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje..."></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 AyudasRD | Todos los derechos reservados</p>
+    </div>
+</body>
+</html>
